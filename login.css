@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(https://cdn.steamstatic.com/steamcommunity/public/images/items/1003590/f455fdc13704ff156933b38cdcc20ef991f49000.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  background-color: rgb(0, 0, 0, 0.5);
+  border-color: rgb(248, 91, 253);
+  border-style: solid;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: cyan;
+  font-family: "Changa", sans-serif;
+  text-align: center;
+  align-content: center;
+  padding: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+main div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  margin-top: 10px;
+}

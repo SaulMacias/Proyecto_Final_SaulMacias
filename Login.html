@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="https://www.shareicon.net/data/2016/09/01/822739_user_512x512.png"
+        height="120px"
+      />
+      <h1>Login</h1>
+      <div>
+        <h3>Usuario</h3>
+        <input type="text" id="userl" placeholder="Username" />
+      </div>
+      <div>
+        <h3>Contraseña</h3>
+        <input type="password" id="passl" placeholder="Password" />
+      </div>
+      <input type="submit" onclick="checkdata()" />
+      <h1><br />Registrarse</h1>
+      <div>
+        <h3>Usuario</h3>
+        <input type="text" id="user" placeholder="Username" />
+      </div>
+      <div>
+        <h3>Correo</h3>
+        <input type="email" id="email" placeholder="Email" />
+      </div>
+      <div>
+        <h3>Contraseña</h3>
+        <input type="password" id="pass" placeholder="Password" />
+      </div>
+      <input type="submit" onclick="getdata()" />
+      <div>
+        <a href="index.html">
+          <img
+            style="align-self: flex-start"
+            src="https://a795b27ee0.cbaul-cdnwnd.com/a4fa7a02b9c92ea39b8f551041fbc3c1/200000043-06c4507be3/boton_regresar.png?ph=a795b27ee0"
+            height="60px"
+            alt="boton regresar"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=qZqI0uUddUU"
+          target="_blank"
+          style="align-self: center; margin-left: 100px; color: cyan"
+          >Olvidaste tu contraseña?</a
+        >
+      </div>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

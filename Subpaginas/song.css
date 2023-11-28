@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(https://images.wallpaperscraft.com/image/single/blue_white_music_282_1920x1080.jpg);
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+}
+.title {
+  grid-area: title;
+  justify-self: center;
+}
+.title p {
+  font-size: 60px;
+  color: rgb(3, 247, 255);
+  font-family: "Changa", sans-serif;
+}
+.button {
+  grid-area: button;
+  justify-self: right;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 120px;
+  grid-template-areas: "logo title title title button";
+  justify-content: stretch;
+  border-style: solid;
+  border-color: rgb(248, 91, 253);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: row;
+}
+main div {
+  padding-top: 30px;
+  color: cyan;
+  font-family: "Changa", sans-serif;
+  text-align: left;
+  border-style: solid;
+  border-color: rgb(248, 91, 253);
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-size: 23px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+}

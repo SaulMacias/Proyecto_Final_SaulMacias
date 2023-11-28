@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(https://www.ppt-backgrounds.net/thumbs/musics-1080p-hd-pictures--one-hd-pictures---presentation.jpeg);
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+}
+.title {
+  grid-area: title;
+  justify-self: center;
+}
+.title p {
+  font-size: 60px;
+  color: rgb(3, 247, 255);
+  font-family: "Changa", sans-serif;
+}
+.links {
+  grid-area: links;
+}
+.links a {
+  display: inline-block;
+  color: rgb(0, 255, 255);
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 20px;
+  grid-template-areas:
+    "logo title title title ."
+    "logo links links links .";
+  justify-content: stretch;
+  border-style: solid;
+  border-color: rgb(248, 91, 253);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+nav {
+  grid-area: nav;
+  border-style: solid;
+  border-color: rgb(248, 91, 253);
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0, 0.5);
+  margin-left: 10px;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color: cyan;
+  font-size: 20px;
+  font-family: "Changa", sans-serif;
+}
+nav a {
+  margin-top: 35px;
+  color: cyan;
+}
+
+.item {
+  color: cyan;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: "Changa", sans-serif;
+  font-size: 28px;
+  background-color: rgb(0, 0, 0, 0.25);
+}
+.gallery {
+  grid-area: gallery;
+  display: grid;
+  margin-right: 10px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  justify-content: stretch;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav gallery gallery"
+    "nav gallery gallery"
+    "nav gallery gallery"
+    "nav gallery gallery";
+  justify-content: stretch;
+}
+
+footer {
+  display: inline-block;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-color: rgb(248, 91, 253);
+  border-style: solid;
+  border-radius: 25px;
+  margin: 10px;
+  color: cyan;
+  font-family: "Changa", sans-serif;
+}
+footer a {
+  color: cyan;
+}
